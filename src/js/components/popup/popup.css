@@ -1,0 +1,93 @@
+.popup-wrapper {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    color: black;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.193);
+}
+
+.active {
+    display: flex;
+}
+
+.popup-content {
+    width: 260px;
+    background: #fff;
+    position: relative;
+    padding: 30px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.popup-input-text-wrapper {
+    margin-bottom: 15px;
+}
+
+.popup-inputs-wrapper {
+    margin-bottom: 15px;
+}
+
+.input-header {
+    font-size: 1.2rem;
+}
+
+input {
+    display: block;
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 5px;
+    margin-bottom: 5px;
+    font-size: 1rem;
+}
+
+input:invalid {
+    background-color: #fdd;
+  }
+
+input:valid {
+    background-color: rgb(226, 255, 221);
+  }
+  
+input:focus:invalid {
+    outline: none;
+  }
+
+.popup-buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    padding: 5px;
+    border: 1px solid gray;
+    border-radius: 6px;
+    cursor: pointer;
+    background: white;
+    font-size: 1rem;
+}
+
+.error {
+    width: 100%;
+    padding: .3px;
+    display: none;
+    font-size: .8rem;
+    color: white;
+    background-color: #900;
+    border-radius: 0 0 5px 5px;
+    padding: 0.3em;
+    box-sizing: border-box;
+  }
+  
+  .error.active {
+    display: block;
+  }

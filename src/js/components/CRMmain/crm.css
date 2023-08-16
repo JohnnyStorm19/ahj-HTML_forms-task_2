@@ -1,0 +1,65 @@
+.crm-container {
+    margin: 0 auto;
+    width: 35%;
+}
+
+.crm-main-wrapper {
+    padding: 10px;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+.crm-header-wrapper, .crm-main-header-items, .item-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.crm-header-wrapper {
+    margin-bottom: 1rem;
+}
+
+.crm-main-header {
+    margin-bottom: .8rem;
+}
+
+.crm-main-header-items {
+    list-style-type: none;
+}
+
+.crm-header-title {
+    font-size: 1.5rem;
+}
+
+.crm-header-add {
+    font-size: 1.5rem;
+}
+
+.items-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.item-wrapper {
+    margin-bottom: .5rem;
+}
+
+.item-wrapper:last-child {
+    margin-bottom: 0;
+}
+
+.item-name, .item-price, .item-actions-wrapper {
+    width: 25%;
+    word-wrap: break-word;
+}
+
+.item-name {
+    text-align: left;
+}
+
+.item-price, .item-actions-wrapper {
+    text-align: center;
+}
+
+[data-action] {
+    cursor: pointer;
+    font-weight: bold;
+}
