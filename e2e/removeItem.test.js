@@ -34,8 +34,6 @@ describe('CRM form', () => {
     const crmAddBtn = await page.$('.crm-header-add');
 
     await crmAddBtn.click();
-    await page.waitForSelector('.active');
-
 
     const savebtn = await page.$('.btn-save');
     const inputName = await page.$('.popup-input-text');
